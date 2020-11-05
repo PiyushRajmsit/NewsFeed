@@ -4,15 +4,15 @@
 
 Users have the following capabilities (command to be used in [ - ]):
 
-* [post] A user can post a feed item.
+* **[post]** A user can post a feed item.
 
-* [follow] Users can follow other users.
+* **[follow]** Users can follow other users.
 
-* [reply] A user can comment on another user's feed item.
+* **[reply]** A user can comment on another user's feed item.
 
-* [upvote/downvote] Upvote or downvote posts.
+* **[upvote/downvote]** Upvote or downvote posts.
 
-* [shownewsfeed] Any user can read his news feed. ***News items are sorted based on the following***:
+* **[shownewsfeed]** Any user can read his news feed. ***News items are sorted based on the following***:
 
 * Followed users: posts by followed users appear first.
 
@@ -74,7 +74,7 @@ I am going to be the darkest dark wizard of all time
 
 > follow~tom
 
-> reply~001~I am with you dark lord!
+> reply~ 001 ~I am with you dark lord!
 
 > login~albus
 
@@ -105,7 +105,7 @@ I am lord Voldemort btw 3:)
 
 > downvote~002
 
-> reply~002~LOL!
+> reply~ 002 ~ LOL!
 
 > shownewsfeed
 
@@ -137,7 +137,7 @@ Happiness can be found, even in the darkest of times, if one only remembers to t
 1994-04-19 10:28 PM
 ```
 
-##Guidelines
+## Guidelines
 * The code should handle edge cases properly and fail gracefully. Add suitable exception handling, wherever applicable.
 Handle concurrency where needed.
 * The code should have a good object-oriented design.
