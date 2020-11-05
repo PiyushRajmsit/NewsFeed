@@ -12,7 +12,7 @@ Users have the following capabilities (command to be used in [ - ]):
 
 * [upvote/downvote] Upvote or downvote posts.
 
-* [shownewsfeed] Any user can read his news feed. News items are sorted based on the following:
+* [shownewsfeed] Any user can read his news feed. ***News items are sorted based on the following***:
 
 * Followed users: posts by followed users appear first.
 
