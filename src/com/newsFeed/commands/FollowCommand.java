@@ -29,5 +29,6 @@ public class FollowCommand implements ICommand {
         }
         Users users = newsFeedRepo.getUser(cmd[1]);
         newsFeedRepo.getActiveUser().followUser(users);
+        System.out.println("====== "+ newsFeedRepo.getActiveUser().getName() + " Followed -> " + users.getName() + "======");
     }
 }

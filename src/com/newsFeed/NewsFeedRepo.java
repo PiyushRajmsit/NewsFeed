@@ -46,6 +46,7 @@ public class NewsFeedRepo {
             throw new UserDoesNotExist("User Does Not Exists");
         }
         setActiveUser(usersList.get(name));
+        System.out.println("==== User has Logged In: " + name + "======");
     }
 
     public void setActiveUser(Users activeUser) {
@@ -64,6 +65,7 @@ public class NewsFeedRepo {
     }
 
     public void createPost(Post post){
+
         postList.put(post.getuId(),post);
         allPost.add(post);
         System.out.println("Post Successfully Created" + post.toString());

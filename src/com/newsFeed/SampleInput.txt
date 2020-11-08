@@ -1,0 +1,35 @@
+Signup~John~john@beatles
+Signup~Paul~paul@beatles
+Signup~George~george@beatles
+Signup~Ringo~ringo@beatles
+Signup~Freedie~freedie@queens
+Signup~Brian~brian@queens
+Signup~Roger~roger@queens
+Signup~Mike~mike@queens
+Signup~Deacon~deacon@queens
+Login~John
+Post~I am John
+Login~Paul
+Post~I am Paul
+Login~George
+Post~I am George
+Login~Ringo
+Post~I am Ringo
+Login~Freedie
+Post~I am Freedie
+Login~Brian
+Post~I am Brian
+Login~Roger
+Post~I am Roger
+Login~Mike
+Post~I am Mike
+Login~Deacon
+Post~I am Deacon
+Login~John
+Follow_User~Paul
+UpVote~12
+Follow_User~Freedie
+DownVote~17
+Reply~15~I am your Big Fan Brian
+Reply~14~I am your Biggest Fan Freedie
+ShowNewsFeed

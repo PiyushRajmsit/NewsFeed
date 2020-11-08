@@ -32,7 +32,7 @@ Users have the following capabilities (command to be used in [ - ]):
 
 * post 005 can look something like
 
-* reply~005~this is the reply text
+* reply ~ 005 ~this is the reply text
 
 * You may change the input-output format without changing the functionality to suit your needs.
 You may hardcode the input in a driver function, have the names of the functions as the commands and the arguments of the commands as the arguments of the functions. It might look something like the following.
