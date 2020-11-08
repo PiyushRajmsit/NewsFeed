@@ -13,7 +13,7 @@ public abstract class Content extends DBObject {
 
     public Content(String text, Users contentOwner) {
         this.text = text;
-        this.localDateTime = LocalDateTime.now();
+        this.localDateTime = LocalDateTime.now().plusDays(this.getuId());
         this.contentOwner = contentOwner;
 
     }
@@ -28,6 +28,17 @@ public abstract class Content extends DBObject {
 
     public Users getContentOwner() {
         return contentOwner;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Content{" +
+                "id = " + super.getuId() +
+                ", text='" + text + '\'' +
+                ", localDateTime=" + localDateTime +
+                ", contentOwner=" + contentOwner.getName() +
+                '}';
     }
 
 }

@@ -47,4 +47,26 @@ public class Post extends Content {
     public List<Reply> getReplyList() {
         return replyList;
     }
+
+    @Override
+    public String toString() {
+        return "Post{" +
+                super.toString() + "," +
+                "upVotes=" + upVotes +
+                ", downVotes=" + downVotes +
+                ", replyList=" + replyList +
+                '}';
+    }
+
+    public int compareTo(Post post){
+        if(this.getScore() == post.getScore()){
+
+            if(this.getReplyList().size() == post.getReplyList().size()){
+                return post.getLocalDateTime().compareTo(this.getLocalDateTime());
+            }
+            return post.getReplyList().size() - this.getReplyList().size();
+        }
+        return  post.getScore() -  this.getScore();
+    }
+
 }

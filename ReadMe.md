@@ -105,7 +105,7 @@ I am lord Voldemort btw 3:)
 
 > downvote~002
 
-> reply~ 002 ~ LOL!
+> reply~ 002 ~LOL!
 
 > shownewsfeed
 
