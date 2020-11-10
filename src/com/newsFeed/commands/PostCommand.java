@@ -28,6 +28,7 @@ public class PostCommand implements ICommand {
         String postContent = cmd[1];
         Post newPost = new Post(postContent,newsFeedRepo.getActiveUser());
         newsFeedRepo.createPost(newPost);
+        newsFeedRepo.getActiveUser().addPost(newPost);
 
     }
 }

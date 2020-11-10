@@ -11,14 +11,12 @@ public class Users extends DBObject {
 
     private String name;
     private String email;
-    private List<Users> following;
     private List<Post> myPosts;
     private Map<Long,Users> userFollowMap;
 
     public Users(String name, String email) {
         this.name = name;
         this.email = email;
-        following = new ArrayList<>();
         myPosts = new ArrayList<>();
         userFollowMap = new HashMap<>();
     }
@@ -31,9 +29,6 @@ public class Users extends DBObject {
         return email;
     }
 
-    public List<Users> getFollowing() {
-        return following;
-    }
 
     public List<Post> getMyPosts() {
         return myPosts;
@@ -43,7 +38,6 @@ public class Users extends DBObject {
         myPosts.add(mypost);
     }
     public void followUser(Users users){
-        following.add(users);
         userFollowMap.put(users.getuId(),users);
     }
 

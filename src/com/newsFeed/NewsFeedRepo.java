@@ -17,12 +17,10 @@ public class NewsFeedRepo {
     private Map<String, Users> usersList;
     private Map<Long, Post> postList;
     private Users activeUser;
-    private List<Post> allPost;
 
     private NewsFeedRepo() {
         usersList = new HashMap<>();
         postList = new HashMap<>();
-        allPost = new ArrayList<>();
     }
 
     public static synchronized NewsFeedRepo getInstance() {
@@ -67,7 +65,6 @@ public class NewsFeedRepo {
     public void createPost(Post post){
 
         postList.put(post.getuId(),post);
-        allPost.add(post);
         System.out.println("Post Successfully Created" + post.toString());
     }
 
